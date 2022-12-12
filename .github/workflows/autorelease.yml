@@ -94,7 +94,7 @@ jobs:
         mkdir compiled
         cat extension.json | jq ".version |= \"${{ needs.sync_latest_from_upstream.outputs.tag || 'v0.0.0' }}\"" > ./compiled/extension.json
         x86_64-w64-mingw32-gcc -c quser.c -o remote-quser.x64.o
-        i686-w64-mingw32-gcc   -c quser.c -o remote-quser.x64.o
+        i686-w64-mingw32-gcc   -c quser.c -o remote-quser.x86.o
         cp -r remote-quser.*.o ./compiled/
         cd compiled
         tar -czvf ../remote-quser.tar.gz .
