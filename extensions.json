@@ -1,0 +1,31 @@
+{
+    "name": "Remote-Quser",
+    "version": "0.0.1",
+    "command_name": "remote-quser",
+    "extension_author": "netero1010",
+    "original_author": "netero1010",
+    "repo_url": "https://github.com/NightlyEscaper/Quser-BOF",
+    "help": "quser.exe implementation using Windows API .",
+    "depends_on": "coff-loader",
+    "entrypoint": "go",
+    "files": [
+        {
+            "os": "windows",
+            "arch": "amd64",
+            "path": "quser.x64.o"
+        },
+        {
+            "os": "windows",
+            "arch": "386",
+            "path": "quser.x86.o"
+        }
+    ],
+    "arguments": [
+        {
+            "name": "target",
+            "desc": "Hostname / ip",
+            "type": "string",
+            "optional": false
+        }
+    ]
+}
