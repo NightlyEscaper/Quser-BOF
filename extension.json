@@ -12,12 +12,12 @@
         {
             "os": "windows",
             "arch": "amd64",
-            "path": "quser.x64.o"
+            "path": "remote-quser.x64.o"
         },
         {
             "os": "windows",
             "arch": "386",
-            "path": "quser.x86.o"
+            "path": "remote-quser.x86.o"
         }
     ],
     "arguments": [
